@@ -77,7 +77,7 @@ void pushTail(int angka1, char nama1[20]) {
 
 
 void pushMid(int angka1, char nama1[20]) {
-    if(!head) {
+    if (!head) {
         head = tail = createNode(angka1, nama1);
     } else {
         if (angka1 < head->angka) {
