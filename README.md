@@ -42,3 +42,23 @@ Operations:
 6. [PreOrder](BinarySearchTree.cpp#L80)
 7. [PostOrder](BinarySearchTree.cpp#L88)
 8. [Pop All](BinarySearchTree.cpp#L96)
+
+## 3. Hash Table
+### 3.1. Linear Probing
+Operations:
+1. [Add](HashTableLinear.cpp#L38)
+2. [Create Node](HashTableLinear.cpp#L31)
+3. [Hash](HashTableLinear.cpp#L20)
+4. [Sum Digit](HashTableLinear.cpp#L11)
+5. [Find](HashTableLinear.cpp#L51)
+6. [Clear](HashTableLinear.cpp#L64)
+
+### 3.2. Chaining
+Operations:
+1. [Add](HashTableChaining.cpp#L45)
+2. [Push](HashTableChaining.cpp#L30)
+3. [Hash](HashTableChaining.cpp#L20)
+4. [Sum Digit](HashTableChaining.cpp#L11)
+5. [Find](HashTableChaining.cpp#L51)
+6. [Clear](HashTableChaining.cpp#L65)
+
