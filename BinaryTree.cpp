@@ -38,6 +38,22 @@ void inOrder(struct data *curr) {
     }
 }
 
+void preOrder(struct data *curr) {
+    if (curr) {
+        printf("%d, ", curr->angka);
+        preOrder(curr->left);
+        preOrder(curr->right);
+    }
+}
+
+void postOrder(struct data *curr) {
+    if (curr) {
+        postOrder(curr->left);
+        postOrder(curr->right);
+        printf("%d, ", curr->angka);
+    }
+}
+
 void popAll(struct data *curr) {
     if(curr){
         popAll(curr->left);
@@ -52,7 +68,12 @@ int main() {
     root = push(root, 3);
     root = push(root, 4);
     root = push(root, 5);
+    printf("Inorder:\n");
     inOrder(root);
+    printf("\nPreorder:\n");
+    preOrder(root);
+    printf("\nPostorder:\n");
+    postOrder(root);
     printf("\n");
     popAll(root);
     return 0;
