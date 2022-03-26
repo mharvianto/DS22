@@ -44,7 +44,17 @@ Operations:
 8. [Pop All](BinarySearchTree.cpp#L96)
 
 ## 3. Hash Table
-### 3.1. Linear Probing
+### 3.1. Hash Functions
+Functions:
+1. [Sum ASCII](BasicHashFunction.cpp#L4)
+2. [Mid Square](BasicHashFunction.cpp#L12)
+3. [Division](BasicHashFunction.cpp#L29)
+4. [Folding](BasicHashFunction.cpp#L33)
+5. [Digit Extraction](BasicHashFunction.cpp#L45)
+6. [Mirror](BasicHashFunction.cpp#L58)
+7. [MyHash](BasicHashFunction.cpp#L74)
+
+### 3.2. Linear Probing
 Operations:
 1. [Add](HashTableLinear.cpp#L38)
 2. [Create Node](HashTableLinear.cpp#L31)
@@ -53,7 +63,7 @@ Operations:
 5. [Find](HashTableLinear.cpp#L51)
 6. [Clear](HashTableLinear.cpp#L64)
 
-### 3.2. Chaining
+### 3.3. Chaining
 Operations:
 1. [Add](HashTableChaining.cpp#L45)
 2. [Push](HashTableChaining.cpp#L30)
