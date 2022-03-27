@@ -3,12 +3,12 @@
 ## 1. Linked list
 ### 1.1. Single Linked List
 Operations:
-1. [PushHead](SingleLinkedList.cpp#L11)
-2. [PushTail](SingleLinkedList.cpp#L18)
-3. [PopHead](SingleLinkedList.cpp#L31)
-4. [PopTail](SingleLinkedList.cpp#L41)
-5. [PopAll](SingleLinkedList.cpp#L59)
-6. [PrintAll](SingleLinkedList.cpp#L59)
+1. [Push Head](SingleLinkedList.cpp#L11)
+2. [Push Tail](SingleLinkedList.cpp#L18)
+3. [Pop Head](SingleLinkedList.cpp#L31)
+4. [Pop Tail](SingleLinkedList.cpp#L41)
+5. [Pop All](SingleLinkedList.cpp#L59)
+6. [Print All](SingleLinkedList.cpp#L59)
 
 ### 1.2. Double Linked List
 Operations:
@@ -53,6 +53,11 @@ Functions:
 5. [Digit Extraction](BasicHashFunction.cpp#L45)
 6. [Mirror](BasicHashFunction.cpp#L58)
 7. [MyHash](BasicHashFunction.cpp#L74)
+    | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+    |---|---|---|---|---|---|---|---|---|---|
+    | a | b | c | d | e | f | g | h | i | j |
+    | j | k | l | m | n | o | p | q | r | s |
+    | t | u | v | w | x | y | z | | | |
 
 ### 3.2. Linear Probing
 Operations:
