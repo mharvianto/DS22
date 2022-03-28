@@ -5,7 +5,6 @@
 
 struct data {
     char kata[20];
-    struct data *next;
 } *table[10];
 
 int sumdigit(int k) {
@@ -31,7 +30,6 @@ int hash(char kata[20]) {
 struct data * createNode(char kata[]){
     struct data *node = (struct data*)malloc(sizeof(struct data));
     strcpy(node->kata, kata);
-    node->next = 0;
     return node;
 }
 
