@@ -88,7 +88,7 @@ char *infixToPrefix(char *infix) {
     clear();
     for (int i = 0; i < l; i++) {
         char a = rev[i];
-        printf("%c | %-10s | %-15s\n", a, stack, result);
+        printf("%c | %-10s | %15s\n", a, stack, reverse(result));
         if (('a' <= a && a <= 'z') || ('A' <= a && a <= 'Z')) {
             result[k++] = a;
         } else {
