@@ -40,7 +40,7 @@ struct data *pop(struct data *curr, int angka) {
     if (curr) {
         if (curr->angka == angka) {
             struct data *temp;
-            if (!curr->left && !curr->left) {
+            if (!curr->left && !curr->right) {
                 // printf("Pop %d NoChild\n", angka);
                 free(curr);
                 return 0;
@@ -117,7 +117,7 @@ int main() {
     postOrder(root);
     printf("\n");
     
-    printf("Pop\n");
+    printf("Pop:\n");
     root = pop(root, 8);
     root = pop(root, 5);
     root = pop(root, 7);

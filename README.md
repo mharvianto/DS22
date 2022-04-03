@@ -61,12 +61,12 @@ Functions:
 
 ### 3.2. Linear Probing
 Operations:
-1. [Add](HashTableLinear.cpp#L38)
-2. [Create Node](HashTableLinear.cpp#L31)
-3. [Hash](HashTableLinear.cpp#L20)
-4. [Sum Digit](HashTableLinear.cpp#L11)
-5. [Find](HashTableLinear.cpp#L51)
-6. [Clear](HashTableLinear.cpp#L64)
+1. [Add](HashTableLinear.cpp#L36)
+2. [Create Node](HashTableLinear.cpp#L30)
+3. [Hash](HashTableLinear.cpp#L19)
+4. [Sum Digit](HashTableLinear.cpp#L10)
+5. [Find](HashTableLinear.cpp#L49)
+6. [Clear](HashTableLinear.cpp#L62)
 
 ### 3.3. Chaining
 Operations:
