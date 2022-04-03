@@ -7,6 +7,7 @@ int n = 0;
 
 void push(char op) {
     stack[n++] = op;
+    stack[n] = '\0';
 }
 
 char top() {
@@ -16,11 +17,14 @@ char top() {
 
 char pop() {
     --n;
-    return stack[n];
+    char t = stack[n];
+    stack[n] = '\0';
+    return t;
 }
 
 void clear() {
     n = 0;
+    stack[0] = '\0';
 }
 
 int precedence(char op) {
@@ -35,14 +39,13 @@ int precedence(char op) {
     }
 } 
 
-
-
 char *infixToPostfix(char *infix) {
     int l = strlen(infix), k = 0;
     clear();
     char *result = (char*)malloc(100);
     for (int i = 0; i < l; i++) {
         char a = infix[i];
+        printf("%c | %-10s | %-15s\n", a, stack, result);
         if (('a' <= a && a <= 'z') || ('A' <= a && a <= 'Z')) {
             result[k++] = a;
         } else {
@@ -85,6 +88,7 @@ char *infixToPrefix(char *infix) {
     clear();
     for (int i = 0; i < l; i++) {
         char a = rev[i];
+        printf("%c | %-10s | %-15s\n", a, stack, result);
         if (('a' <= a && a <= 'z') || ('A' <= a && a <= 'Z')) {
             result[k++] = a;
         } else {
@@ -126,8 +130,8 @@ int main() {
     A+-BC*D/(E+F)
     A+-BC*D/+EF
     A+*-BCD/+EF
-    A+/*-BCD+EF
-    +A/*-BCD+EF
+    A+/ *-BCD+EF
+    +A/ *-BCD+EF
     */
     printf("Prefix : %s\n", infixToPrefix(infix));
     return 0;
